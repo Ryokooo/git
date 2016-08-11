@@ -36,6 +36,8 @@ $ git remote add origin git@github.com:账户名/仓库名.git
 // 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
 $ git push -u origin master // 第一次提交 
 $ git push origin master // 之后的提交
+// 推送其他分支
+$ git push origin 分支名
 // 分支管理
 // 创建并切换到分支 git checkout命令加上-b参数表示创建并切换，相当于以下两条命令:$ git branch dev $ git checkout dev
 $ git checkout -b 分支名
