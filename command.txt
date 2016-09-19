@@ -50,3 +50,5 @@ $ git merge 分支名
 // 删除分支
 $ git branch -d 分支名
 
+// 在广联远程仓库时报错 fatal: remote origin already exists 的解决办法
+$ git remote rm origin
