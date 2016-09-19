@@ -52,3 +52,14 @@ $ git branch -d 分支名
 
 // 在广联远程仓库时报错 fatal: remote origin already exists 的解决办法
 $ git remote rm origin
+
+// git删除文件后通知远程仓库的步骤
+$ git rm file.name
+$ git commit -m "commit des"
+$ git push origin master
+
+// git 修改文件后通知远程仓库步骤
+$ git add file.name
+$ git commit -m "commit des"
+$ git push origin master
+
