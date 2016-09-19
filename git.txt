@@ -1,3 +1,0 @@
-Git is a version control system now it has changed.
-Git is free software.
-Git new branch dev.
