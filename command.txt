@@ -48,7 +48,7 @@ $ git checkout 分支名
 // 分支合并 先切换到某个分支 执行命令会把分支名的内容合并到这个分支中
 $ git merge 分支名
 // 一般使用这种方式来合并分支  会产生合并的commit信息
-$ git merge 分支名 --no-ff
+$ git merge 分支名 --no-ff -m "commit msgs"
 // 删除分支
 $ git branch -d 分支名
 
