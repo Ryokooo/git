@@ -77,3 +77,8 @@ $ git stash pop
 // 我们可以多次的stash 恢复时根据指定的stash版本恢复
 $ git stash list
 $ git stash apply stash@{0}
+
+// git merge冲突解决
+// Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容 我们根据实际情况来修改之后需要提交
+$ git add file.name
+$ git commit -m "fix msgs"
