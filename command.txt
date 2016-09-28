@@ -67,3 +67,13 @@ $ git push origin master
 
 // git在分支工作现场没有提交的时候切换到其他分支或退出需要把工作现场储存起来
 $ git stash
+// 查看所有已被冻结的工作空间
+$ git stash list
+// 恢复被冻结的工作 apply不会删除stash内容所以需要drop来删除stash
+$ git stash apply
+$ git stash drop
+// 也可以使用pop的方式直接相当于执行了上面两步
+$ git stash pop
+// 我们可以多次的stash 恢复时根据指定的stash版本恢复
+$ git stash list
+$ git stash apply stash@{0}
