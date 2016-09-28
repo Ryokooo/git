@@ -65,3 +65,17 @@ $ git add file.name
 $ git commit -m "commit des"
 $ git push origin master
 
+
+
+
+// 查看所有已被冻结的工作空间
+$ git stash list
+// 恢复被冻结的工作 apply不会删除stash内容所以需要drop来删除stash
+$ git stash apply
+$ git stash drop
+// 也可以使用pop的方式直接相当于执行了上面两步
+$ git stash pop
+// 我们可以多次的stash 恢复时根据指定的stash版本恢复
+$ git stash list
+$ git stash apply stash@{0}
+
