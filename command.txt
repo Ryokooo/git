@@ -65,3 +65,5 @@ $ git add file.name
 $ git commit -m "commit des"
 $ git push origin master
 
+// git在分支工作现场没有提交的时候切换到其他分支或退出需要把工作现场储存起来
+$ git stash
