@@ -13,6 +13,8 @@ $ git add file.name
 $ git add .
 // 提交到本地创库 -m后面输入的是本次提交的说明
 $ git commit -m "commit description"
+// 如果是已经被版本库添加过的文件修改后重新提交不需要add的步骤
+$ git commit -am "commit log"
 // 查看git状态 可以查看哪些文件被修改过
 $ git status
 // 查看具体的被更改的内容
@@ -48,9 +50,11 @@ $ git checkout 分支名
 // 分支合并 先切换到某个分支 执行命令会把分支名的内容合并到这个分支中
 $ git merge 分支名
 // 一般使用这种方式来合并分支  会产生合并的commit信息
-$ git merge --no-ff -m "commit msgs" 分支名
+$ git merge 分支名 --no-ff -m "commit msgs"
 // 删除分支
 $ git branch -d 分支名
+// 强制删除分支
+$ git branch -D 分支名
 
 // 在广联远程仓库时报错 fatal: remote origin already exists 的解决办法
 $ git remote rm origin
